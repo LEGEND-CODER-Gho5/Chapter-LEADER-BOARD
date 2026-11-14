@@ -96,10 +96,11 @@ footer b{display:block;font:500 .85rem var(--mono);letter-spacing:.3em;color:var
 <script>
 /* ===== EDIT MEMBER HOURS HERE. Everything else updates automatically. ===== */
 const MEMBERS=[
-{name:'Tejas Kaikala',h:8,m:0},{name:'Akshaj Priyadarshan',h:5,m:10},{name:'Adithya Kolluri',h:4,m:30},
-{name:'Sathvik Ippagunta',h:4,m:0},{name:'Nirbhay Kandale',h:4,m:0},{name:'Kyrus Estafanous',h:3,m:30},
-{name:'Satvik',h:2,m:0},{name:'Zaid Khan',h:2,m:0},{name:'Mridul Boddu',h:0,m:45},
-{name:'Mayank Bhoyar',h:0,m:0},{name:'Oliver Merrill',h:0,m:0}];
+{name:'Tejas Kaikala',h:10,m:11},{name:'Adithya Kolluri',h:7,m:24},{name:'Satvik Pandey',h:5,m:30},
+{name:'Akshaj Priyadarshan',h:5,m:10},{name:'Sathvik Ippagunta',h:5,m:0},{name:'Zaid Khan',h:4,m:23},
+{name:'Kyrus Estafanous',h:3,m:30},{name:'Nirbhay Kandale',h:2,m:22},
+{name:'Oliver Merrill',h:1,m:54},{name:'Mridul Boddu',h:0,m:45},
+{name:'Mayank Bhoyar',h:0,m:0}];
 /*DATA*/
 const fmt=t=>{const h=t/60|0,m=t%60,r=[];if(h)r.push(h+(h>1?' hours':' hour'));if(m)r.push(m+(m>1?' minutes':' minute'));return r.join(' ')||'0 minutes'};
 const data=MEMBERS.map(o=>({...o,t:o.h*60+o.m})).sort((a,b)=>b.t-a.t);
